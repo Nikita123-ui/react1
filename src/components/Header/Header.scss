@@ -1,0 +1,14 @@
+header{
+    background-image: url('../../images/bg1.png');
+    width: 100%;
+    height: 1048px;
+    margin: 0 0 70px;
+    padding: 44px 215px 56px 246px;
+    max-width:1372px;
+    background-size: cover;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
