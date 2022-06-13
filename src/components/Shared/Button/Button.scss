@@ -1,0 +1,42 @@
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.primary {
+    background-color: $primary-color;
+    color: $white-color;
+}
+
+.warning {
+    background-color: $warning-color;
+    color: $white-color;
+}
+
+.error {
+    background-color: $danger-color;
+    color: $white-color;
+}
+
+.sm {
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.md {
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lg {
+    width: 250px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}

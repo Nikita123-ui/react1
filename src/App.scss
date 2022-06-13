@@ -1,0 +1,82 @@
+@import './styles/variable.scss';
+@import './styles/mixin.scss';
+@import './styles/typography.scss';
+@import './styles/utilities.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(./fonts/Poppins-Bold/poppins-bold-webfont.eot),
+        url(./fonts/Poppins-Bold/poppins-bold-webfont.woff),
+        url(./fonts/Poppins-Bold/poppins-bold-webfont.woff2),
+        url(./fonts/Poppins-Bold/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(./fonts/Poppins-Regular/poppins-regular-webfont.eot),
+        url(./fonts/Poppins-Regular/poppins-regular-webfont.woff),
+        url(./fonts/Poppins-Regular/poppins-regular-webfont.woff2),
+        url(./fonts/Poppins-Regular/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url(./fonts/Poppins-Italic/poppins-italic-webfont.eot),
+        url(./fonts/Poppins-Italic/poppins-italic-webfont.woff),
+        url(./fonts/Poppins-Italic/poppins-italic-webfont.woff2),
+        url(./fonts/Poppins-Italic/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(./fonts/Poppins-Light/poppins-light-webfont.eot),
+        url(./fonts/Poppins-Light/poppins-light-webfont.woff),
+        url(./fonts/Poppins-Italic/poppins-italic-webfont.woff2),
+        url(./fonts/Poppins-Light/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(./fonts/Poppins-SemiBold/poppins-semibold-webfont.eot),
+        url(./fonts/Poppins-SemiBold/poppins-semibold-webfont.woff),
+        url(./fonts/Poppins-SemiBold/poppins-semibold-webfont.woff2),
+        url(./fonts/Poppins-SemiBold/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium/poppins-medium-webfont.eot),
+        url(./fonts/Poppins-Medium/poppins-medium-webfont.woff),
+        url(./fonts/Poppins-Medium/poppins-medium-webfont.woff2),
+        url(./fonts/Poppins-Medium/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Muli-Light;
+    src: url(./fonts/Muli-Light/muli-light-webfont.eot),
+        url(./fonts/Muli-Light/muli-light-webfont.woff),
+        url(./fonts/Muli-Light/muli-light-webfont.woff2),
+        url(./fonts/Muli-Light/Muli-Light.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(./fonts/Rubik-Medium/rubik-medium-webfont.eot),
+        url(./fonts/Rubik-Medium/rubik-medium-webfont.woff),
+        url(./fonts/Rubik-Medium/rubik-medium-webfont.woff2),
+        url(./fonts/Rubik-Medium/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(./fonts/Rubik-Regular/rubik-regular-webfont.eot),
+        url(./fonts/Rubik-Regular/rubik-regular-webfont.woff),
+        url(./fonts/Rubik-Regular/rubik-regular-webfont.woff2),
+        url(./fonts/Rubik-Regular/Rubik-Regular.ttf);
+}
