@@ -1,12 +1,14 @@
 @import './styles/variable.scss';
 @import './styles/mixin.scss';
-@import './styles/typography.scss';
-@import './styles/utilities.scss';
+
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.container{
+    max-width: 1900px;
 }
 
 @font-face {

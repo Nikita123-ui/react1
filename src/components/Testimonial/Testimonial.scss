@@ -1,0 +1,80 @@
+@import '../../styles/variable.scss';
+.testimonial {
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+}
+
+.testimonialHead h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: Muli-Light;
+    // color: $black-color;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brands img {
+    margin-bottom: 70px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonialPara {
+    max-width: 550px;
+    margin-bottom: 100px;
+}
+
+.testimonialPara p {
+    // font-size: 20px;
+    // font-family: Poppins-Regular;
+    // color: $light-gray;
+    line-height: 1.46;
+}
+
+.testimonialPara::before {
+    content: url(../../images/quotes.png);
+    margin-left: -70px;
+    margin-bottom: -60px;
+    display: block;
+}
+
+.head {
+    font-size: 20px;
+    font-family: Rubik-Medium;
+    color: $light-black;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.head::before {
+    content: '';
+    background-color: $primary-color;
+    display: inline-block;
+    min-width: 30px;
+    min-height: 3px;
+    margin-bottom: 5px;
+    transform: translateX(-8px);
+}
+
+.subHead {
+    font-size: 16px;
+    font-family: Rubik-Medium;
+    color: #333333;
+}
+
+.circle {
+    background-color: #0079ff;
+    display: inline-block;
+    min-height: 380px;
+    min-width: 1px;
+    margin-right: 100px;
+
+}

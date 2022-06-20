@@ -1,0 +1,59 @@
+@import '../../styles/variable.scss';
+.services {
+    background-color: $secondary-white;
+    margin: 200px 0 100px 0;
+    max-width: 1900px;
+    .servicesHead {
+        padding: 60px 0 40px 0;
+         h1 {
+                text-align: center;
+                font-size: 36px;
+                font-family: Muli-Light;
+                font-weight: 300;
+            }
+        }
+}
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 33.33%;
+            background-color:$white-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            padding: 30px 20px;
+            border-radius: 8px;
+            min-height: 280px;
+        }
+}
+
+.box2 {
+    border: 3px solid rgba(0, 90, 255, .4);
+}
+.boxImg{
+    margin-top: 50px;
+}
+.boxTitle {
+    h2 {
+        text-align: center;
+        font-family: Poppins-SemiBold;
+        font-size: 20px;
+        font-weight: 600;   
+    }
+}
+
+.boxSubTitle p {
+    text-align: center;
+    line-height: 1.71;
+
+}
