@@ -1,4 +1,4 @@
-
+@import '../../../styles/variable.scss';
 ul {
     list-style-type: none;
     margin: 50px 0 0 0;
@@ -8,18 +8,20 @@ ul {
 li {
     display: inline;
     a{
-        color: #fff;
+        color: $white-color;
         // text-decoration: none;
         font-size: 16px;
         font-family: Poppins-SemiBold;
         padding: 0 20px;
     }
     a:hover{
-        color: black;
+        border: 1px solid rgba(255, 255, 255, .5);
+        border-radius: 4px;
+        padding: 10px 20px;
     }
 }
-.active{
-    border: 1px solid rgba(255,255,255,.5);
-    border-radius: 4px ;
-    padding: 10px 20px;
-}
+// .active{
+//     border: 1px solid rgba(255,255,255,.5);
+//     border-radius: 4px ;
+//     padding: 10px 20px;
+// }
