@@ -1,0 +1,119 @@
+@import '../../styles/variable.scss';
+.testingProvide {
+    background-image: url(../../images/bg2.png);
+    height: 1811px;
+    width: 100%;
+    /*height: auto;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.testingHead {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testing h1 {
+    font-size: 36px;
+    font-family: Muli-Light;
+    // color: #fff;
+    // max-width: 300px;
+    margin: 0;
+    margin-top: 800px;
+    font-weight: 400;
+
+}
+
+.variantOfTesting {
+    margin-top: 300px;
+    margin-left: 300px;
+}
+
+.type1,
+.type2,
+.type3,
+.type4,
+.type5,
+.type6,
+.type7,
+.type8 {
+    max-width: 500px;
+    width: 50%;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.type1,
+.type3,
+.type5,
+.type7 {
+    border-right: 1px solid $light-gray2;
+}
+
+.type1::after,
+.type2::after,
+.type3::after,
+.type4::after,
+.type5::after,
+.type6::after {
+    content: '';
+    background-color:$light-gray2;
+    display: block;
+    width: 250px;
+    height: 1px;
+    margin-top: 30px;
+}
+
+/* .type1,
+.type2,
+.type3,
+.type4,
+.type5,
+.type6{
+	border-bottom: 1px solid #b0b0b0;
+} */
+.numberIcon {
+    background-color: $white-color;
+    border-radius: 50%;
+    max-width: 35px;
+    min-height: 35px;
+    position: relative;
+}
+
+.numberIcon p {
+    text-align: center;
+    // font-size: 20px;
+    // font-family: Poppins-Bold;
+    // color: $primary-color;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h2 {
+    font-size: 20px;
+    font-family: Poppins-Medium;
+    // color: $white-color;
+    font-weight: 500;
+}
+
+.para p {
+    // font-size: 14px;
+    // font-family: Poppins-Regular;
+    // color: #ffffff;
+    line-height: 1.93;
+    opacity: .7;
+    /* padding: 0 10px 0 0; */
+    max-width: 318px;
+    /* max-height: 130px;  */
+}
+
+.link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Poppins-Medium;
+}

@@ -1,14 +1,126 @@
-$primary-color: blue;
-$secondary-color: gray;
-$danger-color: red;
-$warning-color: orange;
-$success-color:green;
+// colors
+
+$primary-color:#005aff;
+$secondary-color: #444444;
+$light-gray:#999999;
 $white-color:#fff;
+$black-color: #000;
+$light-black:#333333;
+$light-gray2:#b0b0b0;
+$secondary-white:#f1f1f1;
+$gray-dark:#272727;
 
 
-$h1-fontsize: 40px;
-$h2-fontsize: 36px;
-$h3-fontsize: 28px;
-$h4-fontsize: 20px;
-$h5-fontsize: 18px;
-$h6-fontsize: 16px;
+// colors
+
+.white {
+    color: $white-color;
+}
+
+.black {
+    color: $black-color;
+}
+
+.lightGray {
+    color: $secondary-color;
+}
+.gray{
+    color: $light-gray;
+}
+.blue{
+    color: $primary-color;
+}
+// font family
+.fontBold {
+    font-family: Poppins-Bold;
+}
+
+.fontSemiBold {
+    font-family: Poppins-SemiBold;
+}
+
+.fontMedium {
+    font-family: Poppins-Medium;
+}
+
+.fontLight {
+    font-family: Muli-Light;
+}
+
+.fontRegular {
+    font-family: Poppins-Regular;
+}
+
+.fontRegular2 {
+    font-family: Rubik-Regular;
+}
+
+.fontMedium2 {
+    font-family: Rubik-Medium;
+}
+
+.xsm {
+    font-size: 14px;
+}
+
+.sm {
+    font-size: 18px;
+}
+
+.md {
+    font-size: 20px;
+}
+
+.lg {
+    font-size: 26px;
+}
+
+.xl {
+    font-size: 36px;
+}
+
+.xxl {
+    font-size: 40px;
+}
+
+// font weight
+
+.fontWeight_100 {
+    font-weight: 100;
+}
+
+.fontWeight_200 {
+    font-weight: 200;
+}
+
+.fontWeight_300 {
+    font-weight: 300;
+}
+
+.fontWeight_400 {
+    font-weight: 400;
+}
+
+.fontWeight_500 {
+    font-weight: 500;
+}
+
+.fontWeight_600 {
+    font-weight: 600;
+}
+
+.fontWeight_700 {
+    font-weight: 700;
+}
+
+.fontWeight_800 {
+    font-weight: 800;
+}
+
+.fontWeight_900 {
+    font-weight: 900;
+}
+
+.fontWeight_normal {
+    font-weight: normal;
+}
