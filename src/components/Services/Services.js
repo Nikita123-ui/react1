@@ -1,9 +1,9 @@
 import Heading from '../Shared/Heading';
 import Image from '../Shared/Image';
 import Text from '../Shared/Text';
+import './Services.scss';
 import { serviceType } from './ServiceUtils';
 
-import './Services.scss';
 const Services = () => {
   return (
     <div className="services">
@@ -14,15 +14,21 @@ const Services = () => {
           variant="lightGray"
         />
       </div>
-      <div className="row">
-        {serviceType.map((currElement) => (
-          <ServiceType
-            icon={currElement.icon}
-            head={currElement.head}
-            subHead={currElement.subHead}
-          />
-        ))}
-      </div>
+      {serviceType.map((currElement, index) => {
+        return (
+          <div className="row">
+            {currElement.map((data) => {
+              return (
+                <ServiceType
+                  icon={data.icon}
+                  head={data.head}
+                  subHead={data.subHead}
+                />
+              );
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 };
