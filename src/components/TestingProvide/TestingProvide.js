@@ -1,6 +1,7 @@
 import Heading from '../Shared/Heading';
 import Text from '../Shared/Text';
 import './TestingProvide.scss';
+import { testingType } from './TestingProvideUtils';
 
 const TestingProvide = () => {
   return (
@@ -15,7 +16,14 @@ const TestingProvide = () => {
         </div>
         <div className="variantOfTesting">
           <div className="row">
-            <div className="type1">
+            {testingType.map((item) => (
+              <TestingType
+                icon={item.numberText}
+                head={item.titleText}
+                subHead={item.paraText}
+              />
+            ))}
+            {/* <div className="type1">
               <div className="numberIcon">
                 <Text
                   type="p"
@@ -68,9 +76,9 @@ const TestingProvide = () => {
               <div className="link">
                 <a href="#">Read more…</a>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="type3">
               <div className="numberIcon">
                 <Text
@@ -149,7 +157,7 @@ const TestingProvide = () => {
               <div className="para">
                 <Text
                   type="p"
-                  text=" Galaxy uses a mixture of manual and automated techniques to
+                  text="Galaxy uses a mixture of manual and automated techniques to
                   deliver an insightful report that covers cross-browser
                   compatibility checks for your website or app."
                   variant="white"
@@ -248,10 +256,42 @@ const TestingProvide = () => {
                 <a href="#">Read more…</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
 };
+
+const TestingType = (props) => {
+  return (
+    <div className="type1">
+      <div className="numberIcon">
+        <Text
+          type="p"
+          text={props.numberText}
+          variant="blue"
+          fontSize="md"
+          fontFamily="fontBold"
+        />
+      </div>
+      <div className="title">
+        <Heading type="h" text={props.titleText} variant="white" />
+      </div>
+      <div className="para">
+        <Text
+          type="p"
+          text={props.paraText}
+          variant="white"
+          fontSize="xsm"
+          fontFamily="fontRegular"
+        />
+      </div>
+      <div className="link">
+        <a href="#">Read more…</a>
+      </div>
+    </div>
+  );
+};
+
 export default TestingProvide;

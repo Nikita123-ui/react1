@@ -19,13 +19,14 @@ const Text = ({ type, fontSize, fontFamily, variant, text }) => {
 
 Text.propTypes = {
   text: PropTypes.string,
-  type: PropTypes.oneOf('p', 'span'),
+  type: PropTypes.oneOfType('p', 'span', 'div'),
+  variant: PropTypes.oneOf('white', 'black', 'lightGray'),
 };
 
 export default Text;
 
 Text.defaultProps = {
-  type: 'p',
+  type: 'div',
   variant: 'lightGray',
   fontSize: 'md',
 };

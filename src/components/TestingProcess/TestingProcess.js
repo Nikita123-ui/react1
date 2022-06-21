@@ -3,6 +3,7 @@ import Heading from '../Shared/Heading';
 import Image from '../Shared/Image';
 import Text from '../Shared/Text';
 import './TestingProcess.scss';
+import { testingProcessType } from './TestingProcessUtils';
 
 const TestingProcess = () => {
   return (
@@ -12,7 +13,14 @@ const TestingProcess = () => {
       </div>
       <div className="processPart">
         <div className="row2">
-          <div className="div1">
+          {testingProcessType.map((currElement) => (
+            <TestingProcessType
+              icon={currElement.tpText}
+              head={currElement.headText}
+              subHead={currElement.pText}
+            />
+          ))}
+          {/* <div className="div1">
             <div className="divHead">
               <Text
                 type="span"
@@ -86,13 +94,13 @@ const TestingProcess = () => {
                 fontFamily="fontRegular"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="processImage">
           <Image src={Illustration} alt="" />
         </div>
         <div className="row3">
-          <div className="div1">
+          {/* <div className="div1">
             <div className="divHead">
               <Text
                 type="span"
@@ -164,10 +172,37 @@ const TestingProcess = () => {
                 fontFamily="fontRegular"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
 };
+
+const TestingProcessType = (props) => {
+  return (
+    <div className="div1">
+      <div className="divHead">
+        <Text
+          type="span"
+          text={props.tpText}
+          variant="blue"
+          fontSize="lg"
+          fontFamily="fontBold"
+        />
+        <Heading type="h2" text={props.headText} variant="lightGray" />
+      </div>
+      <div className="divPara">
+        <Text
+          type="p"
+          text={props.pText}
+          variant="lightGray"
+          fontSize="xsm"
+          fontFamily="fontRegular"
+        />
+      </div>
+    </div>
+  );
+};
+
 export default TestingProcess;
