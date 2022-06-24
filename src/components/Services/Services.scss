@@ -11,20 +11,24 @@
                 font-family: Muli-Light;
                 font-weight: 300;
             }
+            @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576){
+                padding: 30px 15px;
+                line-height: 1.2;
+            } 
         }
+        @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-1140){
+                margin-top: 50px;
+                margin-bottom: 0;
+        } 
+
 }
 .row {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-        .box1,
-        .box2,
-        .box3,
-        .box4,
-        .box5,
-        .box6 {
-            width: 33.33%;
+        .box1 {
+             width: 33.33%;
             background-color:$white-color;
             display: flex;
             flex-direction: column;
@@ -34,14 +38,37 @@
             padding: 30px 20px;
             border-radius: 8px;
             min-height: 280px;
+            @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576) {
+                    width: 100%;
+                    margin-left: 0;
+                    padding: 0;
+                    margin-bottom: 20px;
+                }
+            @media only screen and (min-width:$breakpoint-576)and(max-width:$breakpoint-1140){
+                padding: 0 20px;
+                margin-left: 10px;
+                flex: 0 1 33.33%;
+                // height: 100%;
+                
+            }     
         }
+         @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576){
+                flex-direction: column;
+                padding: 0 15px;
+            }
+        @media only screen and (min-width:$breakpoint-576)and(max-width:$breakpoint-1140){
+                padding: 0 30px;
+            }    
 }
 
-.box2 {
+.box1:hover {
     border: 3px solid rgba(0, 90, 255, .4);
 }
 .boxImg{
     margin-top: 50px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576) {
+           margin-top: 20px;
+        }
 }
 .boxTitle {
     h2 {

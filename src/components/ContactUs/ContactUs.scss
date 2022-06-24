@@ -3,17 +3,32 @@
     background-image: url(../../images/bg3.png);
     height: 862px;
     background-size: cover;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+           height: auto;
+           padding-bottom: 20px;
+        }
 }
 
 .contactPart {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            padding: 0 15px;
+            flex-direction: column;
+        }
+    @media only screen and (min-width:$breakpoint-768)and(max-width:$breakpoint-1400) {
+            padding: 0 15px;
+        }
 }
 
 .leftSide {
     width: 50%;
     margin-top: 100px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+           width: 100%;
+           margin-top: 50px;
+        }
 }
 
 .leftHead h1 {
@@ -23,9 +38,7 @@
 }
 
 .leftPara p {
-    // font-size: 20px;
-    // font-family: Poppins-Regular;
-    // color: #ffffff;
+
     line-height: 1.3;
     letter-spacing: 0.2px;
     margin-top: 50px;
@@ -33,19 +46,28 @@
 
 .detailSide {
     margin-top: 70px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            margin: 0;
+        }
 }
 
 .detailSide p {
     font-size: 20px;
     font-family: Poppins-Regular;
-    color: #fff;
+    color: $white-color;
     margin-top: 50px;
     line-height: 2;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            margin: 0;
+        }
 }
 
 .detailSide img {
     margin-right: 20px;
     vertical-align: middle;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            margin: 0;
+        }
 }
 
 .rightSide {
@@ -56,15 +78,30 @@
     padding: 0 20px 50px 40px;
     margin-left: 50px;
     border-radius: 8px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            width: 100%;
+            padding: 0;
+           margin-left: 0;
+        }
+        @media only screen and (min-width:$breakpoint-992)and(max-width:$breakpoint-1400) {
+            padding: 0 20px;
+        }
 }
-
+form{
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+           padding: 0 15px;
+        }
+}
 .rightSide h1 {
     font-size: 28px;
     margin: 50px 0;
     font-family: Poppins-Medium;
-    // color: #444444;
     font-weight: 500;
     line-height: 2.14;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            margin: 20px 0;
+            text-align: center;
+        }
 }
 
 input {
@@ -75,6 +112,9 @@ input {
     font-size: 16px;
     color: #707070;
     font-family: Poppins-Medium;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            margin-bottom: 50px;
+        }
 }
 
 input[type='submit'] {
@@ -85,6 +125,14 @@ input[type='submit'] {
     color: $white-color;
     font-size: 24px;
     font-family: Poppins-SemiBold;
-    padding: 15px 0;
+    // padding: 15px 0;
     text-transform: uppercase;
+    min-width: 250px;
+    min-height: 50px;
+}
+input[type='submit']:hover{
+    background-color: $white-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    cursor: pointer;
 }

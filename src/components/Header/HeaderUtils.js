@@ -6,13 +6,13 @@ export const navigation = [
   { title: 'CONTACT', url: '#', active: 'active' },
 ];
 
-export const heading = [
-  {
-    type: 'h1',
-    text: 'YOUR PERSONALIZED QA TESTING TEAM',
-    variant: 'white',
-    fontFamily: 'fontSemiBold',
-    size: 'xxl',
-    fontWeight: 'fontWeight_600',
-  },
-];
+// export const heading = [
+//   {
+//     type: 'h1',
+//     text: 'YOUR PERSONALIZED QA TESTING TEAM',
+//     variant: 'white',
+//     fontFamily: 'fontSemiBold',
+//     size: 'xxl',
+//     fontWeight: 'fontWeight_600',
+//   },
+// ];

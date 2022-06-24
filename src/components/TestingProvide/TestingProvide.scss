@@ -3,9 +3,19 @@
     background-image: url(../../images/bg2.png);
     height: 1811px;
     width: 100%;
-    /*height: auto;*/
+    
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+        //    background-size: cover;
+        background-color: $light-gray2;
+        background-image: none;
+        height: auto;
+    }
+    @media only screen and (min-width:$breakpoint-768)and(max-width:$breakpoint-992) {
+        background-size: cover;
+        height: auto;
+    }
 }
 
 .testingHead {
@@ -13,60 +23,84 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            display: block;
+        }
 }
-
+.testing{
+    @media only screen and (min-width:$breakpoint-768)and(max-width:$breakpoint-1400) {
+           padding: 0 20px;
+        }
+        // @media only screen and (min-width:$breakpoint-576)and(max-width:$breakpoint-992) {
+        //     display: none;
+        // }
+}
 .testing h1 {
     font-size: 36px;
     font-family: Muli-Light;
-    // color: #fff;
-    // max-width: 300px;
     margin: 0;
     margin-top: 800px;
     font-weight: 400;
-
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
+    @media only screen and (min-width:$breakpoint-768)and(max-width:$breakpoint-992) {
+           color: $black-color;
+        }    
 }
 
 .variantOfTesting {
     margin-top: 300px;
     margin-left: 300px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576) {
+            margin: 0;
+            padding: 0 15px;
+    }
+        @media only screen and (min-width:$breakpoint-576)and(max-width:$breakpoint-768) {
+            margin: 0;
+            // padding: 0 15px;
+        }
+     @media only screen and (min-width:$breakpoint-768)and(max-width:$breakpoint-992) {
+            margin-top: 100px;
+            margin-left: 0;
+        }
+    @media only screen and (min-width:$breakpoint-992)and(max-width:$breakpoint-1400) {
+           margin-left: 0;
+        }
 }
 
-.type1,
-.type2,
-.type3,
-.type4,
-.type5,
-.type6,
-.type7,
-.type8 {
+.type1 {
     max-width: 500px;
     width: 50%;
     padding: 0 20px 20px 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
 }
 
-.type1,
-.type3,
-.type5,
-.type7 {
-    border-right: 1px solid $light-gray2;
-}
 
-.type1::after,
-.type2::after,
-.type3::after,
-.type4::after,
-.type5::after,
-.type6::after {
+.type1::after {
     content: '';
     background-color:$light-gray2;
     display: block;
     width: 250px;
     height: 1px;
     margin-top: 30px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+            background-color: $white-color;
+        }
 }
-
 
 .numberIcon {
     background-color: $white-color;
@@ -91,13 +125,15 @@
 
 .para p {
     line-height: 1.93;
-    opacity: .7;
+    opacity: 0.7;
     max-width: 318px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            text-align: center;
+            line-height: normal;
+        }
+    
 }
 
-.link a {
-    // color: $white-color;
-    // text-decoration: none;
-    // font-size: 16px;
+.link {
     font-family: Poppins-Medium;
 }

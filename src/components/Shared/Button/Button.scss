@@ -1,11 +1,24 @@
 @import '../../../styles/variable.scss';
 @import '../../../styles/mixin.scss';
 
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
 .blackAndBlue{
     background-color: $white-color;
     color: $primary-color;
     border: 1px solid $primary-color;
-    @include btn;
+    @include button;
+}
+.blackAndBlue:hover{
+    background-color: $primary-color;
+    color: $white-color;
+    border: 1px solid $white-color;
+    cursor: pointer;
 }
 
 .btn-sm {

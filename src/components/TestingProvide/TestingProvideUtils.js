@@ -4,7 +4,7 @@ export const testingType = [
       numberText: '1',
       titleText: 'Functional Testing',
       paraText:
-        "We'll generate an extensive list of functional test cases and scenarios to be executed across various Windows and Mac devices",
+        "We'll generate an extensive list of functional test cases and scenarios to be executed across various devices",
     },
     {
       numberText: '2',

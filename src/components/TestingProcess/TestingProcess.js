@@ -3,7 +3,7 @@ import Heading from '../Shared/Heading';
 import Image from '../Shared/Image';
 import Text from '../Shared/Text';
 import './TestingProcess.scss';
-import { testingProcessType } from './TestingProcessUtils';
+import { testingProcessType, testingProcessType2 } from './TestingProcessUtils';
 
 const TestingProcess = () => {
   return (
@@ -15,9 +15,9 @@ const TestingProcess = () => {
         <div className="row2">
           {testingProcessType.map((currElement) => (
             <TestingProcessType
-              icon={currElement.tpText}
-              head={currElement.headText}
-              subHead={currElement.pText}
+              tpText={currElement.tpText}
+              headText={currElement.headText}
+              pText={currElement.pText}
             />
           ))}
         </div>
@@ -25,11 +25,11 @@ const TestingProcess = () => {
           <Image src={Illustration} alt="" />
         </div>
         <div className="row3">
-          {testingProcessType.map((currElement) => (
+          {testingProcessType2.map((currElement) => (
             <TestingProcessType
-              icon={currElement.tpText}
-              head={currElement.headText}
-              subHead={currElement.pText}
+              tpText={currElement.tpText}
+              headText={currElement.headText}
+              pText={currElement.pText}
             />
           ))}
         </div>

@@ -1,4 +1,6 @@
 import University from '../../images/bitmap.png';
+import CircleBlank from '../../images/circle blank.png';
+import CircleFill from '../../images/Circle-icon.png';
 import NetgearBlack from '../../images/netgear-logo-black.png';
 import StaplesLogo from '../../images/staplesLogo.png';
 import Heading from '../Shared/Heading';
@@ -18,7 +20,11 @@ const Testimonial = () => {
           <Image src={NetgearBlack} alt="" />
           <Image src={StaplesLogo} alt="" />
         </div>
-        <div className="circle"></div>
+        <div className="circle">
+          <Image src={CircleBlank} />
+          <Image src={CircleFill} />
+          <Image src={CircleBlank} />
+        </div>
         <div className="testimonialPara">
           <Text
             type="p"

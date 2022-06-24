@@ -63,12 +63,24 @@ const Header = () => {
       <div className="brandPartners">
         <Heading type="h1" text="Trusted by" variant="black" />
         <div className="brandIcon">
-          <Image src={Sony} alt="" />
-          <Image src={Netger} alt="" />
-          <Image src={Staples} alt="" />
-          <Image src={Downjohn} alt="" />
-          <Image src={Tivo} alt="" />
-          <Image src={Hipoki} alt="" />
+          <div>
+            <Image src={Sony} alt="" />
+          </div>
+          <div>
+            <Image src={Netger} alt="" />
+          </div>
+          <div>
+            <Image src={Staples} alt="" />
+          </div>
+          <div>
+            <Image src={Downjohn} alt="" />
+          </div>
+          <div>
+            <Image src={Tivo} alt="" />
+          </div>
+          <div>
+            <Image src={Hipoki} alt="" />
+          </div>
         </div>
       </div>
     </header>

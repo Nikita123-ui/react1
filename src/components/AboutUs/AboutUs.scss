@@ -1,3 +1,4 @@
+@import"../../styles/variable.scss";
 .aboutUs {
     max-width: 1200px;
     margin: 100px auto 0 auto;
@@ -10,12 +11,16 @@
             font-weight: 300;
         }
     p   {
-            // font-size: 18px;
-            // font-family: Poppins-Regular;
-            // color: #444444;
             line-height: 1.78;
             letter-spacing: .18px;
             text-align: center;
             padding: 0 20px;
+            @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768) {
+                    line-height: 1.2;
+                }
         }
+               
+        @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-768){
+        margin-top: 50px;
+	}
 }

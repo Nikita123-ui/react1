@@ -2,13 +2,15 @@
 .testimonial {
     max-width: 1200px;
     margin: 100px auto 0 auto;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            margin-top: 50px;
+        }
 }
 
 .testimonialHead h1 {
     text-align: center;
     font-size: 36px;
     font-family: Muli-Light;
-    // color: $black-color;
 }
 
 .brands {
@@ -19,24 +21,37 @@
 
 .brands img {
     margin-bottom: 70px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-576) {
+            margin-bottom: 30px;
+            width: 50%;
+        }
 }
 
 .row1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            flex-direction: column;
+            padding: 0 15px;
+        }
+         @media only screen and (min-width:$breakpoint-992)and(max-width:$breakpoint-1400) {
+            padding: 0 30px;
+        }
 }
 
 .testimonialPara {
     max-width: 550px;
     margin-bottom: 100px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 }
 
 .testimonialPara p {
-    // font-size: 20px;
-    // font-family: Poppins-Regular;
-    // color: $light-gray;
     line-height: 1.46;
+    
 }
 
 .testimonialPara::before {
@@ -44,6 +59,9 @@
     margin-left: -70px;
     margin-bottom: -60px;
     display: block;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            margin: 0;
+        }
 }
 
 .head {
@@ -52,6 +70,9 @@
     color: $light-black;
     font-weight: 500;
     margin-left: 10px;
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+           display: block;
+        }
 }
 
 .head::before {
@@ -71,10 +92,29 @@
 }
 
 .circle {
-    background-color: #0079ff;
-    display: inline-block;
+    background-color: $white-color;
+    // display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     min-height: 380px;
     min-width: 1px;
     margin-right: 100px;
+    img{
+        width: 17px;
+        height: 17px;
+        z-index: 1;
+    }
+    @media only screen and (min-width:$breakpoint-320)and(max-width:$breakpoint-992) {
+            display: none;
+        }
 
+}
+.circle::before{
+    content: '';
+    background-color: rgba(0, 121, 255, 0.3);
+    width: 1px;
+    height: 350px;
+    transform: translateX(8px);
+    position: absolute;
 }

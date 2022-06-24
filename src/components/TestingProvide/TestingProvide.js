@@ -16,15 +16,21 @@ const TestingProvide = () => {
           />
         </div>
         <div className="variantOfTesting">
-          <div className="row">
-            {testingType.map((item) => (
-              <TestingType
-                icon={item.numberText}
-                head={item.titleText}
-                subHead={item.paraText}
-              />
-            ))}
-          </div>
+          {testingType.map((item, index) => {
+            return (
+              <div className="row">
+                {item.map((data) => {
+                  return (
+                    <TestingType
+                      numberText={data.numberText}
+                      titleText={data.titleText}
+                      paraText={data.paraText}
+                    />
+                  );
+                })}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -44,7 +50,7 @@ const TestingType = (props) => {
         />
       </div>
       <div className="title">
-        <Heading type="h" text={props.titleText} variant="white" />
+        <Heading type="h2" text={props.titleText} variant="white" />
       </div>
       <div className="para">
         <Text
